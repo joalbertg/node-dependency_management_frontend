@@ -4,18 +4,22 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "copyfiles --up 1 src/public/* dist && yarn webpack-dev-server --config webpack/webpack.config.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "animate.css": "^4.1.0",
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^6.0.2",
+    "copyfiles": "^2.3.0",
     "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
   }
 }
