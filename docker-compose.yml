@@ -2,7 +2,7 @@ version: '3'
 services:
   app:
     build: .
-    command: sh -c "yarn build"
+    command: sh -c "yarn start:dev"
     volumes:
       - .:/myapp
     ports:
